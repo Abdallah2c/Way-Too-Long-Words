@@ -7,14 +7,16 @@ public class Training {
 
         Scanner in = new Scanner(System.in);
         String st1,st2;
-        int x = in.nextInt();
-        for(int i=0; i<x; i++)
+        int x = in.nextInt(); //Enter the number of test cases
+        for(int i=0; i<x; i++) //A loop to enter the desired number of variables
         { 
             st1 = in.next();
-            if(st1.length() > 10)
+            //Check if the word has more than 10 characters
+            if(st1.length() > 10) 
             {
+                 //Store the substring between the 1st & last characters in a variable
                 st2 = st1.substring(1,st1.length()-1);
-                System.out.println(st1.charAt(0) +""+ st2.length() +""+ st1.charAt(st1.length()-1));
+                System.out.println(st1.charAt(0) +""+ st2.length() +""+ st1.charAt(st1.length()-1)); //display
             }else
                 System.out.println(st1);
         }
