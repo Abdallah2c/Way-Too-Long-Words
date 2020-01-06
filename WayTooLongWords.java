@@ -7,8 +7,10 @@ public class Training {
 
         Scanner in = new Scanner(System.in);
         String st1,st2;
-        int x = in.nextInt(); //Enter the number of test cases
-        for(int i=0; i<x; i++) //A loop to enter the desired number of variables
+        //Enter the number of test cases
+        int x = in.nextInt(); 
+        //A loop to enter the desired number of variables
+        for(int i=0; i<x; i++) 
         { 
             st1 = in.next();
             //Check if the word has more than 10 characters
